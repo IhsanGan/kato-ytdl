@@ -1,0 +1,16 @@
+---
+application:
+  name: "kato-ytdl"
+  project: "fcfyc"
+  organization: "QoveryCommunity"
+  storage:
+  - name: "ytdl"
+    size: "10"
+    type: "ssd"
+    mount_point: "/mnt/ytdl"
+routers:
+- name: "main-kato-ytdl"
+  routes:
+  - application_name: "kato-ytdl"
+    paths:
+    - "/*"
